@@ -1,0 +1,47 @@
+<form nz-form [formGroup]="form" class="login-form">
+  <nz-form-item>
+    <nz-form-label nzFor="xAxis">X Axis</nz-form-label>
+    <nz-form-control nzErrorTip="Please input a value">
+      <nz-input-number class="w-100" formControlName="xAxis"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="yAxis">Y Axis</nz-form-label>
+    <nz-form-control nzErrorTip="Please input a value">
+      <nz-input-number class="w-100" formControlName="yAxis"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="x">X</nz-form-label>
+    <nz-form-control nzErrorTip="Please input a value">
+      <nz-input-number class="w-100" formControlName="x"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="y">Y</nz-form-label>
+    <nz-form-control nzErrorTip="Please input a value">
+      <nz-input-number class="w-100" formControlName="y"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="orientation">Orientation</nz-form-label>
+    <nz-form-control nzErrorTip="Please input a value">
+      <nz-select formControlName="orientation" class="w-100">
+        <nz-option nzLabel="N" [nzValue]="0"></nz-option>
+        <nz-option nzLabel="E" [nzValue]="90"></nz-option>
+        <nz-option nzLabel="W" [nzValue]="270"></nz-option>
+        <nz-option nzLabel="S" [nzValue]="180"></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="instruction">Instruction</nz-form-label>
+    <nz-form-control nzErrorTip="Please input a value">
+      <input type="text" nz-input formControlName="instruction" />
+    </nz-form-control>
+  </nz-form-item>
+</form>
+<div *nzModalFooter>
+  <button nz-button nzType="default" nzSize="small" (click)="destroyModal()">Cancel</button>
+  <button nz-button nzType="primary" nzSize="small" (click)="submit()">Submit</button>
+</div>

@@ -1,0 +1,14 @@
+<nz-card nzSize="small" [nzExtra]="extraTemplate">
+  <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins">
+  </canvas>
+</nz-card>
+<ng-template #extraTemplate>
+  <button nz-button nzType="default" nzSize="small" (click)="showModal()">re-config</button>
+</ng-template>
