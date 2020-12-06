@@ -1,27 +1,28 @@
-# Aym
+Documentation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+Après le téléchargement du projet, lancer la commande « npm install » dans un terminal pour faire l’installation des différent dépendances ( chartJs , ng zorro ) .
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1/ Valeur des Axes :
+-	Veuillez choisir les valeurs de l’axe des abscisses ( X ) et l’axe des ordonnées ( Y )
 
-## Code scaffolding
+2/ Position initiale de l’aspirateur :
+-	Veuillez choisir la position initiale de l’aspirateur :
+•	Sa position sur l’axe des abscisses ( X )
+•	Sa Position sure l’axe des ordonnées ( Y )
+•	Sa orientation ( Nord ( N ) , Est ( E ) , Ouest ( W) ou Sud ( S ) )
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3/ Les Instructions :
+-	Veuillez choisir les instructions à l’aspirateur en choisissant les 3 options suivant :
+•	« D » pour orienter l’aspirateur 90 degrés à droite .
+•	« G » pour orienter l’aspirateur 90 degrés à gauche.
+•	« A » pour avancer l’aspirateur à l’endroit où elle est orienté.
+Nb : les lettre D , G et A doivent être en MAJUSCULE .
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+4/ Confirmation :
+-	Après que le formulaire soit rempli , cliquer sur le bouton « submit » pour voir le trajet de l’aspirateur . 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5/ Reconfiguration :
+-	Pour faire reconfigurer l’application , appuyer sur le bouton « re-config »   . 
